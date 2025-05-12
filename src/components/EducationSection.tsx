@@ -23,17 +23,19 @@ const EducationSection = () => {
       
       <div className="space-y-6">
         {education.map((edu, index) => (
-          <Card key={index} className="border-gray-200 hover:shadow-md transition-shadow">
-            <CardHeader className="pb-2">
+          <Card key={index} className="border-gray-200 hover:shadow-lg transition-shadow bg-white rounded-xl overflow-hidden">
+            <CardHeader className="pb-2 bg-blue-50">
               <div className="flex flex-col md:flex-row md:justify-between md:items-center">
                 <div>
                   <h3 className="font-bold text-xl text-gray-900">{edu.degree}</h3>
                   <p className="text-blue-600">{edu.school}</p>
                 </div>
-                <p className="text-gray-500 text-sm mt-1 md:mt-0">{edu.period}</p>
+                <p className="text-gray-500 text-sm mt-1 md:mt-0 px-3 py-1 bg-white rounded-full shadow-sm">
+                  {edu.period}
+                </p>
               </div>
             </CardHeader>
-            <CardContent>
+            <CardContent className="p-6">
               <p className="text-gray-700">{edu.description}</p>
             </CardContent>
           </Card>
