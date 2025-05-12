@@ -55,15 +55,20 @@ const Index = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen bg-gray-50">
+    <div 
+      className="min-h-screen bg-fixed bg-cover bg-center pt-0"
+      style={{ 
+        backgroundImage: 'linear-gradient(to top, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.8) 100%), url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80")'
+      }}
+    >
       {/* Sidebar */}
       <CVSidebar 
         activeSection={activeSection} 
         onSectionClick={scrollToSection} 
       />
       
-      {/* Main Content */}
-      <main className="flex-1 p-4 md:p-8 overflow-y-auto pb-16">
+      {/* Main Content - adjusted for floating sidebar */}
+      <main className="md:pl-80 p-4 md:p-8 pb-16">
         <div className="max-w-3xl mx-auto space-y-16">
           <section 
             id="profile" 
