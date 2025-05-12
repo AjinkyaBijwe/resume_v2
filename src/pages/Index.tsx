@@ -23,20 +23,33 @@ const Index = () => {
   // Handle scroll and update active section
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + window.innerHeight / 3;
+      const scrollPosition = window.scrollY + 100; // Adjust this value to determine when a section becomes active
       
       // Find which section is in view
-      Object.keys(sectionRefs.current).forEach((id) => {
+      let foundActive = false;
+      // Sort sections by their position in the document, from bottom to top
+      const sortedSections = Object.keys(sectionRefs.current)
+        .filter(id => !!sectionRefs.current[id])
+        .sort((a, b) => {
+          const aOffset = sectionRefs.current[a]?.offsetTop || 0;
+          const bOffset = sectionRefs.current[b]?.offsetTop || 0;
+          return bOffset - aOffset;
+        });
+      
+      // Find the first section that the scroll position has passed
+      for (const id of sortedSections) {
         const section = sectionRefs.current[id];
-        if (section) {
-          const sectionTop = section.offsetTop;
-          const sectionBottom = sectionTop + section.offsetHeight;
-          
-          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-            setActiveSection(id);
-          }
+        if (section && scrollPosition >= section.offsetTop) {
+          setActiveSection(id);
+          foundActive = true;
+          break;
         }
-      });
+      }
+      
+      // If we're at the very top of the page, set the first section as active
+      if (!foundActive && sortedSections.length > 0) {
+        setActiveSection(sortedSections[sortedSections.length - 1]);
+      }
     };
     
     window.addEventListener('scroll', handleScroll);
@@ -53,6 +66,7 @@ const Index = () => {
         top: section.offsetTop - 20,
         behavior: "smooth"
       });
+      setActiveSection(sectionId); // Immediately set active section for better user feedback
     }
   };
 
