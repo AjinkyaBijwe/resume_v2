@@ -1,0 +1,115 @@
+
+{
+  "profile": {
+    "name": "John Doe",
+    "title": "Senior Software Engineer",
+    "description": "Passionate software engineer with over 8 years of experience developing web and mobile applications. Specialized in React, TypeScript, and Node.js.",
+    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    "location": "San Francisco, California",
+    "email": "john.doe@example.com",
+    "phone": "+1 (123) 456-7890",
+    "website": "johndoe.dev",
+    "linkedin": "linkedin.com/in/johndoe",
+    "github": "github.com/johndoe"
+  },
+  "experience": [
+    {
+      "company": "Tech Innovations Inc.",
+      "position": "Senior Software Engineer",
+      "period": "2020 - Present",
+      "description": "Led the development of the company's flagship product, a SaaS platform for data analytics. Mentored junior developers and implemented CI/CD pipelines.",
+      "technologies": ["React", "TypeScript", "Node.js", "AWS"]
+    },
+    {
+      "company": "Web Solutions Ltd.",
+      "position": "Frontend Developer",
+      "period": "2017 - 2020",
+      "description": "Developed responsive web applications for various clients. Improved application performance by 40% through code optimization.",
+      "technologies": ["Angular", "JavaScript", "CSS", "HTML"]
+    },
+    {
+      "company": "Mobile Apps Co.",
+      "position": "Junior Developer",
+      "period": "2015 - 2017",
+      "description": "Built and maintained mobile applications for iOS and Android. Collaborated with UI/UX designers to implement design mockups.",
+      "technologies": ["React Native", "JavaScript", "Java", "Swift"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Stanford University",
+      "degree": "Master of Science in Computer Science",
+      "period": "2013 - 2015",
+      "description": "Specialized in Artificial Intelligence and Machine Learning. Graduated with distinction."
+    },
+    {
+      "institution": "University of California, Berkeley",
+      "degree": "Bachelor of Science in Computer Engineering",
+      "period": "2009 - 2013",
+      "description": "Dean's List for all semesters. Active member of the Robotics Club."
+    }
+  ],
+  "skills": [
+    { "name": "React", "level": 95 },
+    { "name": "TypeScript", "level": 90 },
+    { "name": "Node.js", "level": 85 },
+    { "name": "JavaScript", "level": 95 },
+    { "name": "HTML/CSS", "level": 90 },
+    { "name": "Git", "level": 85 },
+    { "name": "AWS", "level": 80 },
+    { "name": "GraphQL", "level": 75 },
+    { "name": "Docker", "level": 70 }
+  ],
+  "projects": [
+    {
+      "name": "E-commerce Platform",
+      "description": "A full-stack e-commerce platform with product management, shopping cart, and payment processing.",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
+      "url": "https://github.com/johndoe/ecommerce-platform",
+      "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    },
+    {
+      "name": "Task Management App",
+      "description": "A collaborative task management application with real-time updates and team collaboration features.",
+      "technologies": ["React", "Firebase", "Tailwind CSS"],
+      "url": "https://github.com/johndoe/task-manager",
+      "image": "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    },
+    {
+      "name": "Weather Dashboard",
+      "description": "A weather dashboard that provides real-time weather information and forecasts for any location.",
+      "technologies": ["JavaScript", "OpenWeather API", "Chart.js"],
+      "url": "https://github.com/johndoe/weather-app",
+      "image": "https://images.unsplash.com/photo-1561484930-998b6a7b22e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Innovation Award",
+      "organization": "Tech Innovations Inc.",
+      "date": "2023",
+      "description": "Received for developing an AI-powered feature that increased user engagement by 35%."
+    },
+    {
+      "title": "Best Mobile App",
+      "organization": "Mobile App Awards",
+      "date": "2020",
+      "description": "Won for creating a health tracking app that was downloaded by over 500,000 users."
+    },
+    {
+      "title": "Hackathon Winner",
+      "organization": "SF Code Challenge",
+      "date": "2019",
+      "description": "First place in a 48-hour hackathon for building a sustainable energy tracking application."
+    }
+  ],
+  "contact": {
+    "email": "john.doe@example.com",
+    "phone": "+1 (123) 456-7890",
+    "social": {
+      "linkedin": "linkedin.com/in/johndoe",
+      "github": "github.com/johndoe",
+      "twitter": "twitter.com/johndoe"
+    }
+  }
+}

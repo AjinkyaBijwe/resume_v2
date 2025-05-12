@@ -6,6 +6,8 @@ import ExperienceSection from "@/components/ExperienceSection";
 import EducationSection from "@/components/EducationSection";
 import SkillsSection from "@/components/SkillsSection";
 import ContactSection from "@/components/ContactSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import AwardsSection from "@/components/AwardsSection";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("profile");
@@ -100,6 +102,22 @@ const Index = () => {
             className="scroll-mt-16 md:scroll-mt-0"
           >
             <SkillsSection />
+          </section>
+          
+          <section 
+            id="projects" 
+            ref={(el) => registerSection("projects", el)}
+            className="scroll-mt-16 md:scroll-mt-0"
+          >
+            <ProjectsSection />
+          </section>
+          
+          <section 
+            id="awards" 
+            ref={(el) => registerSection("awards", el)}
+            className="scroll-mt-16 md:scroll-mt-0"
+          >
+            <AwardsSection />
           </section>
           
           <section 

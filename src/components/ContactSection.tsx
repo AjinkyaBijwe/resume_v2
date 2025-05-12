@@ -6,8 +6,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import contactData from "@/data/resumeData.json";
 
 const ContactSection = () => {
+  const { contact } = contactData;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -44,7 +46,7 @@ const ContactSection = () => {
                 <Mail className="h-5 w-5 text-blue-500 mr-3" />
                 <div>
                   <p className="text-sm text-gray-500">Email</p>
-                  <p className="font-medium">john.doe@example.com</p>
+                  <p className="font-medium">{contact.email}</p>
                 </div>
               </CardContent>
             </Card>
@@ -54,7 +56,7 @@ const ContactSection = () => {
                 <Phone className="h-5 w-5 text-blue-500 mr-3" />
                 <div>
                   <p className="text-sm text-gray-500">Phone</p>
-                  <p className="font-medium">+1 (123) 456-7890</p>
+                  <p className="font-medium">{contact.phone}</p>
                 </div>
               </CardContent>
             </Card>

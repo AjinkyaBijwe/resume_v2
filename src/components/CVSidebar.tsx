@@ -1,6 +1,6 @@
 
 import { cn } from "@/lib/utils";
-import { User, Briefcase, Book, Settings, Mail } from "lucide-react";
+import { User, Briefcase, Book, Settings, Mail, Award, Star } from "lucide-react";
 
 interface CVSidebarProps {
   activeSection: string;
@@ -13,6 +13,8 @@ const CVSidebar = ({ activeSection, onSectionClick }: CVSidebarProps) => {
     { id: "experience", label: "Experience", icon: Briefcase },
     { id: "education", label: "Education", icon: Book },
     { id: "skills", label: "Skills", icon: Settings },
+    { id: "projects", label: "Projects", icon: Star },
+    { id: "awards", label: "Awards", icon: Award },
     { id: "contact", label: "Contact", icon: Mail },
   ];
 
