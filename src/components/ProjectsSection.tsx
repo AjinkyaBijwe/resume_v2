@@ -1,9 +1,9 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import projectsData from "@/data/resumeData.json";
+import data from "@/data/data.json";
 
 const ProjectsSection = () => {
-  const { projects } = projectsData;
+  const { projects } = data;
 
   return (
     <div className="space-y-8">

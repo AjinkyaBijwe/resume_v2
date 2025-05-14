@@ -1,10 +1,10 @@
 
 import { Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import awardsData from "@/data/resumeData.json";
+import data from "@/data/data.json";
 
 const AwardsSection = () => {
-  const { awards } = awardsData;
+  const { awards } = data;
 
   return (
     <div className="space-y-8">

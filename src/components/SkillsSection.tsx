@@ -1,25 +1,10 @@
 
 import { Progress } from "@/components/ui/progress";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import data from "@/data/data.json";
 
 const SkillsSection = () => {
-  const technicalSkills = [
-    { name: "React", level: 95 },
-    { name: "TypeScript", level: 90 },
-    { name: "HTML/CSS", level: 90 },
-    { name: "Node.js", level: 75 },
-    { name: "GraphQL", level: 70 },
-    { name: "Python", level: 65 },
-  ];
-  
-  const softSkills = [
-    "Team Leadership",
-    "Communication",
-    "Problem Solving",
-    "Project Management",
-    "Agile Methodologies",
-    "Mentoring"
-  ];
+  const { skills } = data;
 
   return (
     <div className="space-y-8">
@@ -32,7 +17,7 @@ const SkillsSection = () => {
           </CardHeader>
           <CardContent className="p-6">
             <div className="space-y-4">
-              {technicalSkills.map((skill, index) => (
+              {skills.technical.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
                     <span className="font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
@@ -52,7 +37,7 @@ const SkillsSection = () => {
             </CardHeader>
             <CardContent className="p-6">
               <div className="flex flex-wrap gap-2">
-                {softSkills.map((skill, index) => (
+                {skills.soft.map((skill, index) => (
                   <div 
                     key={index} 
                     className="bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-medium shadow-sm"
@@ -70,9 +55,9 @@ const SkillsSection = () => {
             </CardHeader>
             <CardContent className="p-6">
               <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                <li>AWS Certified Solutions Architect</li>
-                <li>Google Cloud Professional Developer</li>
-                <li>Certified Scrum Master</li>
+                {skills.certifications.map((cert, index) => (
+                  <li key={index}>{cert}</li>
+                ))}
               </ul>
             </CardContent>
           </Card>

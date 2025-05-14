@@ -1,21 +1,9 @@
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import data from "@/data/data.json";
 
 const EducationSection = () => {
-  const education = [
-    {
-      degree: "Master of Computer Science",
-      school: "Stanford University",
-      period: "2014 - 2016",
-      description: "Specialized in Software Engineering and Human-Computer Interaction. Thesis on optimizing rendering performance in web applications.",
-    },
-    {
-      degree: "Bachelor of Science in Computer Science",
-      school: "University of California, Berkeley",
-      period: "2010 - 2014",
-      description: "Graduated with honors. Active member of the Computer Science Student Association.",
-    },
-  ];
+  const { education } = data;
 
   return (
     <div className="space-y-6">
