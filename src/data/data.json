@@ -1,14 +1,13 @@
-
 {
   "profile": {
-    "name": "John Doe",
-    "title": "Senior Software Engineer",
+    "name": "Ajinkya Bijwe",
+    "title": "Assistant Vice President - Technology",
     "description": "Passionate and results-driven software developer with over 8 years of experience designing and implementing scalable applications. Specializing in frontend development with React and TypeScript, with strong knowledge of backend technologies as well. Committed to writing clean, maintainable code and creating exceptional user experiences.",
-    "avatar": "JD",
-    "location": "San Francisco, CA",
+    "avatar": "AB",
+    "location": "Pune, India",
     "availability": "Full-time, Remote",
-    "experience": "8+ Years",
-    "languages": "English (Native), Spanish (Conversational)"
+    "experience": "9+ Years",
+    "languages": "English, Marathi (Native), Hindi"
   },
   "experience": [
     {

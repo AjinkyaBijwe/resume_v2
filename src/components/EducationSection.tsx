@@ -1,6 +1,5 @@
-
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import data from "@/data/data.json";
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import data from '@/data/data.json';
 
 const EducationSection = () => {
   const { education } = data;
@@ -8,10 +7,12 @@ const EducationSection = () => {
   return (
     <div className="space-y-6">
       <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 pb-2 border-b border-gray-200 dark:border-gray-700">Education</h2>
-      
+
       <div className="space-y-6">
         {education.map((edu, index) => (
-          <Card key={index} className="border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow bg-white dark:bg-gray-800 rounded-xl overflow-hidden">
+          <Card
+            key={index}
+            className="border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow bg-white dark:bg-gray-800 rounded-xl overflow-hidden">
             <CardHeader className="pb-2 bg-blue-50 dark:bg-gray-700/50">
               <div className="flex flex-col md:flex-row md:justify-between md:items-center">
                 <div>

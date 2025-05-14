@@ -1,7 +1,6 @@
-
-import { Award } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import data from "@/data/data.json";
+import { Award } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+import data from '@/data/data.json';
 
 const AwardsSection = () => {
   const { awards } = data;
@@ -9,7 +8,7 @@ const AwardsSection = () => {
   return (
     <div className="space-y-8">
       <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 pb-2 border-b border-gray-200 dark:border-gray-700">Awards & Achievements</h2>
-      
+
       <div className="space-y-6">
         {awards.map((award, index) => (
           <Card key={index} className="hover:shadow-md transition-shadow bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
