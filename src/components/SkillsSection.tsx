@@ -1,5 +1,4 @@
 
-import { Progress } from "@/components/ui/progress";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import data from "@/data/data.json";
 
@@ -16,14 +15,13 @@ const SkillsSection = () => {
             <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50">Technical Skills</h3>
           </CardHeader>
           <CardContent className="p-6">
-            <div className="space-y-4">
+            <div className="flex flex-wrap gap-2">
               {skills.technical.map((skill, index) => (
-                <div key={index}>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">{skill.level}%</span>
-                  </div>
-                  <Progress value={skill.level} className="h-2 bg-gray-100 dark:bg-gray-600" indicatorClassName="bg-blue-500 dark:bg-blue-400" />
+                <div 
+                  key={index} 
+                  className="bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-medium shadow-sm"
+                >
+                  {skill.name}
                 </div>
               ))}
             </div>
