@@ -23,7 +23,7 @@ const Index = () => {
   // Handle scroll and update active section
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 100; // Adjust this value to determine when a section becomes active
+      const scrollPosition = window.scrollY + 100;
       
       // Find which section is in view
       let foundActive = false;
@@ -72,7 +72,7 @@ const Index = () => {
 
   return (
     <div 
-      className="min-h-screen bg-fixed bg-cover bg-center pt-0"
+      className="min-h-screen bg-fixed bg-cover bg-center pt-0 dark:text-gray-100"
       style={{ 
         backgroundImage: 'linear-gradient(to top, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.8) 100%), url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80")'
       }}
@@ -84,7 +84,7 @@ const Index = () => {
       />
       
       {/* Main Content - adjusted for floating sidebar */}
-      <main className="md:pl-80 p-4 md:p-8 pb-16">
+      <main className="md:pl-32 p-4 md:p-8 pb-16 dark:bg-gray-900/80 dark:backdrop-blur-sm dark:min-h-screen transition-all duration-200">
         <div className="max-w-3xl mx-auto space-y-16">
           <section 
             id="profile" 
