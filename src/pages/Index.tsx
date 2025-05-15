@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 import CVSidebar from '@/components/CVSidebar';
 import ProfileSection from '@/components/ProfileSection';
@@ -79,8 +80,8 @@ const Index = () => {
       {/* Sidebar */}
       <CVSidebar activeSection={activeSection} onSectionClick={scrollToSection} />
 
-      {/* Main Content - adjusted for floating sidebar */}
-      <main className="p-4 md:p-8 pb-16 dark:bg-gray-900/80 dark:backdrop-blur-sm dark:min-h-screen transition-all duration-200">
+      {/* Main Content - adjusted for floating sidebar to respect collapsed state on tablets */}
+      <main className="p-4 md:p-8 md:ml-24 lg:ml-16 pb-16 dark:bg-gray-900/80 dark:backdrop-blur-sm dark:min-h-screen transition-all duration-200">
         <div className="max-w-3xl mx-auto space-y-16">
           <section id="profile" ref={(el) => registerSection('profile', el)} className="scroll-mt-16 md:scroll-mt-0">
             <ProfileSection />

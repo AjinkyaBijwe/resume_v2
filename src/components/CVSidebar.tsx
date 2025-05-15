@@ -1,6 +1,7 @@
+
 import { cn } from '@/lib/utils';
 import { User, Briefcase, Book, Settings, Mail, Award, Star, ChevronLeft, ChevronRight } from 'lucide-react';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { ThemeToggle } from './ThemeToggle';
 
 interface CVSidebarProps {
@@ -53,7 +54,21 @@ const SidebarHeader = ({ collapsed, toggleCollapse }: { collapsed: boolean; togg
 );
 
 const CVSidebar = ({ activeSection, onSectionClick }: CVSidebarProps) => {
-  const [collapsed, setCollapsed] = useState(false);
+  // Check if we're on an iPad or smaller device (<=1024px width)
+  const isTablet = window.innerWidth <= 1024;
+  const [collapsed, setCollapsed] = useState(isTablet);
+
+  // Update collapsed state when window resizes
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1024) {
+        setCollapsed(true);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const menuItems = useMemo(
     () => [
