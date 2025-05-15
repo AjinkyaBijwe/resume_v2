@@ -29,9 +29,7 @@ const MenuItem = ({
     onClick={() => onClick(id)}
     className={cn(
       'flex items-center w-full px-4 py-3 text-left rounded-lg transition-all',
-      active 
-        ? 'bg-sidebar-primary text-sidebar-primary-foreground shadow-md' 
-        : 'text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground',
+      active ? 'bg-blue-500 text-white shadow-md' : 'text-gray-700 hover:bg-blue-50 dark:text-gray-200 dark:hover:bg-gray-700',
       collapsed && 'justify-center px-2',
     )}
     aria-label={label}>
@@ -41,15 +39,12 @@ const MenuItem = ({
 );
 
 const SidebarHeader = ({ collapsed, toggleCollapse }: { collapsed: boolean; toggleCollapse: () => void }) => (
-  <div className={cn(
-    'border-t border-sidebar-border p-4 mt-auto flex justify-between items-center', 
-    collapsed ? 'pl-3' : 'pl-4'
-  )}>
+  <div className={cn('border-t border-gray-200 dark:border-gray-700 p-4 mt-auto flex justify-between items-center', collapsed ? 'pl-3' : 'pl-4')}>
     <ThemeToggle />
     <button
       onClick={toggleCollapse}
       className={cn(
-        'flex justify-center items-center min-w-9 w-9 h-9 rounded-full p-1.5 bg-sidebar-accent text-sidebar-accent-foreground hover:bg-opacity-80',
+        'flex justify-center items-center min-w-9 w-9 h-9 rounded-full p-1.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600',
         collapsed ? 'ml-5' : 'm-0',
       )}
       aria-label={collapsed ? 'Expand Sidebar' : 'Collapse Sidebar'}>
@@ -96,7 +91,7 @@ const CVSidebar = ({ activeSection, onSectionClick }: CVSidebarProps) => {
       <div className="sticky top-0 z-10 md:hidden bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 w-full">
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center">
-            <div className="w-8 h-8 bg-sidebar-primary rounded-full flex items-center justify-center text-white text-sm font-bold">AB</div>
+            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-bold">AB</div>
             <h1 className="ml-2 text-lg font-bold dark:text-white">Ajinkya Bijwe</h1>
           </div>
           <ThemeToggle />
@@ -110,8 +105,8 @@ const CVSidebar = ({ activeSection, onSectionClick }: CVSidebarProps) => {
               className={cn(
                 'flex items-center px-4 py-2 mx-1 rounded-full whitespace-nowrap transition-all',
                 activeSection === item.id
-                  ? 'bg-sidebar-primary text-sidebar-primary-foreground'
-                  : 'bg-sidebar-accent hover:bg-opacity-80 text-sidebar-accent-foreground',
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-gray-100 hover:bg-gray-200 text-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-200',
               )}
               aria-label={item.label}>
               <item.icon className={cn('h-5 w-5', collapsed ? 'mr-0' : 'mr-3')} />
@@ -124,15 +119,14 @@ const CVSidebar = ({ activeSection, onSectionClick }: CVSidebarProps) => {
       {/* Desktop floating sidebar */}
       <aside
         className={cn(
-          'hidden md:flex fixed left-8 top-8 z-20 h-auto rounded-xl border shadow-lg transition-all duration-200',
-          'bg-sidebar/90 border-sidebar-border backdrop-blur-sm',
+          'hidden md:flex fixed left-8 top-8 z-20 h-auto bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl border border-gray-200 dark:border-gray-700 shadow-lg transition-all duration-200',
           collapsed ? 'w-16' : 'w-64',
         )}>
         <div className="flex flex-col w-full">
           {!collapsed && (
             <div className="flex items-center justify-between p-6 mb-2">
               <div className="flex items-center">
-                <div className="w-10 min-w-10 h-10 bg-sidebar-primary rounded-full flex items-center justify-center text-white text-xl font-bold">AB</div>
+                <div className="w-10 min-w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl font-bold">AB</div>
                 <h1 className="ml-3 text-xl font-bold dark:text-white">Ajinkya Bijwe</h1>
               </div>
             </div>
@@ -140,7 +134,7 @@ const CVSidebar = ({ activeSection, onSectionClick }: CVSidebarProps) => {
 
           {collapsed && (
             <div className="flex items-center justify-between p-2 py-6 mb-2">
-              <div className="w-10 min-w-10 h-10 bg-sidebar-primary rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto">
+              <div className="w-10 min-w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto">
                 AB
               </div>
             </div>
