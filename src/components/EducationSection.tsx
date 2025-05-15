@@ -6,7 +6,7 @@ const EducationSection = () => {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 pb-2 border-b border-gray-200 dark:border-gray-700">Education</h2>
+      <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 pb-2">Education</h2>
 
       <div className="space-y-6">
         {education.map((edu, index) => (

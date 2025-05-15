@@ -6,7 +6,7 @@ const ExperienceSection = () => {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 pb-2 border-b border-gray-200 dark:border-gray-700">Experience</h2>
+      <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 pb-2">Experience</h2>
 
       <div className="space-y-6">
         {experience.map((exp, index) => (

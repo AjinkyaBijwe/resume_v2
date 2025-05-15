@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import { User, Briefcase, Book, Settings, Mail, Award, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useMemo, useEffect } from 'react';
@@ -39,7 +38,7 @@ const MenuItem = ({
 );
 
 const SidebarHeader = ({ collapsed, toggleCollapse }: { collapsed: boolean; toggleCollapse: () => void }) => (
-  <div className={cn('border-t border-gray-200 dark:border-gray-700 p-4 mt-auto flex justify-between items-center', collapsed ? 'pl-3' : 'pl-4')}>
+  <div className="border-t border-gray-200 dark:border-gray-700 p-4 mt-auto flex justify-between items-center">
     <ThemeToggle />
     <button
       onClick={toggleCollapse}
@@ -63,6 +62,8 @@ const CVSidebar = ({ activeSection, onSectionClick }: CVSidebarProps) => {
     const handleResize = () => {
       if (window.innerWidth <= 1024) {
         setCollapsed(true);
+      } else {
+        setCollapsed(collapsed);
       }
     };
 
@@ -88,7 +89,7 @@ const CVSidebar = ({ activeSection, onSectionClick }: CVSidebarProps) => {
   return (
     <>
       {/* Mobile sticky navigation */}
-      <div className="sticky top-0 z-10 md:hidden bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 w-full">
+      <div className="sticky top-0 z-10 md:hidden bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm w-full">
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-bold">AB</div>
@@ -109,7 +110,7 @@ const CVSidebar = ({ activeSection, onSectionClick }: CVSidebarProps) => {
                   : 'bg-gray-100 hover:bg-gray-200 text-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-200',
               )}
               aria-label={item.label}>
-              <item.icon className={cn('h-5 w-5', collapsed ? 'mr-0' : 'mr-3')} />
+              <item.icon className="h-5 w-5 mr-2" />
               <span>{item.label}</span>
             </button>
           ))}

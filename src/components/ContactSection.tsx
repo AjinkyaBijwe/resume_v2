@@ -30,7 +30,7 @@ const ContactSection = () => {
 
   return (
     <div className="space-y-8">
-      <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 pb-2 border-b border-gray-200 dark:border-gray-700">Contact</h2>
+      <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 pb-2">Contact</h2>
 
       <Card className="border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-md rounded-xl overflow-hidden">
         <CardContent className="p-6">
