@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Ajinkya Bijwe",
-    "title": "Assistant Vice President - Technology",
+    "title": "Assistant Vice President - Citi India",
     "description": "Passionate and results-driven software developer with over 8 years of experience designing and implementing scalable applications. Specializing in frontend development with React and TypeScript, with strong knowledge of backend technologies as well. Committed to writing clean, maintainable code and creating exceptional user experiences.",
     "avatar": "AB",
     "location": "Pune, India",
@@ -52,19 +52,8 @@
       { "name": "GraphQL", "level": 70 },
       { "name": "Python", "level": 65 }
     ],
-    "soft": [
-      "Team Leadership",
-      "Communication",
-      "Problem Solving",
-      "Project Management",
-      "Agile Methodologies",
-      "Mentoring"
-    ],
-    "certifications": [
-      "AWS Certified Solutions Architect",
-      "Google Cloud Professional Developer",
-      "Certified Scrum Master"
-    ]
+    "soft": ["Team Leadership", "Communication", "Problem Solving", "Project Management", "Agile Methodologies", "Mentoring"],
+    "certifications": ["AWS Certified Solutions Architect", "Google Cloud Professional Developer", "Certified Scrum Master"]
   },
   "projects": [
     {

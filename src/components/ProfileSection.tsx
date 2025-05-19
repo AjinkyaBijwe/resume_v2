@@ -22,7 +22,7 @@ const ProfileSection = () => {
               <div className="space-y-4">
                 <div className="text-center md:text-left">
                   <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-50">{profile.name}</h1>
-                  <p className="text-xl text-blue-600 dark:text-blue-400 mt-2">{profile.title}</p>
+                  <p className="text-xl text-blue-600 dark:text-blue-400 mt-1">{profile.title}</p>
                 </div>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{profile.description}</p>
