@@ -150,28 +150,28 @@
       "description": "Designed for high-performers, this powerful accountability tool will help you achieve more in 100 days than you used to in an entire year. Track 7 Key Habits, Our app monitors the habits that matter most, giving you a clear daily score to measure your progress.",
       "technologies": ["Angular", "Node.js", "MySQL", "Zapier", "Google Cloud", "Ionic"],
       "url": "https://edge100app.com",
-      "image": "./src/assets/proj1.png"
+      "image": "assets/proj1.png"
     },
     {
       "name": "Bottlematch",
       "description": "Explore wine, find perfect pairings, and connect with a community. Choose a recipe, and let BottleMatch find your perfect wine pairing. Connect with wine and food enthusiasts in our vibrant community.",
       "technologies": ["Angular", "Node.js", "MySQL", "Google Cloud", "Ionic"],
       "url": "https://bottlematch.com",
-      "image": "./src/assets/proj2.webp"
+      "image": "assets/proj2.webp"
     },
     {
       "name": "The Green Mission",
       "description": "Harnessing financial and tax resources for greener, smarter practices.",
       "technologies": ["Angular", "Node.js", "MySQL", "Google Cloud", "Ionic", "Dropbox API"],
       "url": "https://www.thegreenmissioninc.com",
-      "image": "./src/assets/proj3.png"
+      "image": "assets/proj3.png"
     },
     {
       "name": "360 Response",
       "description": "Rapid Response is the most intuitive software for firefighting-response on the market. This iOS-based platform is the first software designed by firefighters for firefighters.",
       "technologies": ["Angular", "Node.js", "MySQL", "Google Cloud", "Ionic", "Google Maps API"],
       "url": "https://www.rapidresponseco.com",
-      "image": "./src/assets/proj4.png"
+      "image": "assets/proj4.png"
     }
   ],
   "awards": [
