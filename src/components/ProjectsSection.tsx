@@ -13,7 +13,7 @@ const ProjectsSection = () => {
           <Card
             key={index}
             className="overflow-hidden hover:shadow-lg transition-shadow bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
-            <div className="w-full h-48 overflow-hidden">
+            <div className="w-full h-48 overflow-hidden border-b border-gray-200 dark:border-gray-700">
               <img src={project.image} alt={project.name} className="w-full h-full object-cover transition-transform hover:scale-105 duration-300" />
             </div>
             <CardContent className="p-6 space-y-4">

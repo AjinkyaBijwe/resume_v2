@@ -147,7 +147,7 @@
   "projects": [
     {
       "name": "EDGE 100",
-      "description": "Designed for high-performers, this powerful accountability tool will help you achieve more in 100 days than you used to in an entire year. Here's how: Track 7 Key Habits: Our app monitors the habits that matter most, giving you a clear daily score to measure your progress.",
+      "description": "Designed for high-performers, this powerful accountability tool will help you achieve more in 100 days than you used to in an entire year. Track 7 Key Habits, Our app monitors the habits that matter most, giving you a clear daily score to measure your progress.",
       "technologies": ["Angular", "Node.js", "MySQL", "Zapier", "Google Cloud", "Ionic"],
       "url": "https://edge100app.com",
       "image": "./src/assets/proj1.png"
