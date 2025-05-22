@@ -1,5 +1,7 @@
 import { Avatar } from '@/components/ui/avatar';
 import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Download } from 'lucide-react';
 import data from '@/data/data.json';
 
 const ProfileSection = () => {
@@ -13,11 +15,15 @@ const ProfileSection = () => {
         <CardContent className="p-0">
           <div className="bg-blue-50 dark:bg-gray-700/50 p-6">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-              <Avatar className="w-32 h-32 border-4 border-white dark:border-gray-600 shadow-lg">
-                <div className="w-32 h-32 rounded-full flex items-center justify-center bg-blue-500 dark:bg-blue-600 text-white text-4xl font-bold">
-                  {profile.avatar}
-                </div>
-              </Avatar>
+              <div className="flex flex-col space-between md:items-start">
+                <Avatar className="w-40 h-48 border-4 border-white dark:border-gray-600 shadow-lg rounded-xl">
+                  <img src={profile.avatarUrl} alt={profile.name} className="rounded-lg object-cover" />
+                </Avatar>
+                <Button className="w-full mt-4" size="sm" onClick={() => window.open(profile.resumeUrl, '_blank')}>
+                  <Download />
+                  Download CV
+                </Button>
+              </div>
 
               <div className="space-y-4">
                 <div className="text-center md:text-left">

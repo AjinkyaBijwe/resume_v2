@@ -17,10 +17,10 @@ const EducationSection = () => {
               <div className="flex flex-col md:flex-row md:justify-between md:items-center">
                 <div>
                   <h3 className="font-bold text-xl text-gray-900 dark:text-gray-50">{edu.degree}</h3>
-                  <p className="text-blue-600 dark:text-blue-400">{edu.school}</p>
+                  <p className="text-blue-600 dark:text-blue-400">{edu.university}</p>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400 text-sm mt-1 md:mt-0 px-3 py-1 bg-white dark:bg-gray-700 rounded-full shadow-sm">
-                  {edu.period}
+                  {edu.duration}
                 </p>
               </div>
             </CardHeader>

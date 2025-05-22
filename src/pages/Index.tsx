@@ -22,32 +22,41 @@ const Index = () => {
   // Handle scroll and update active section
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 150;
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
 
-      // Find which section is in view
-      let foundActive = false;
-      // Sort sections by their position in the document, from bottom to top
-      const sortedSections = Object.keys(sectionRefs.current)
-        .filter((id) => !!sectionRefs.current[id])
-        .sort((a, b) => {
-          const aOffset = sectionRefs.current[a]?.offsetTop || 0;
-          const bOffset = sectionRefs.current[b]?.offsetTop || 0;
-          return bOffset - aOffset;
-        });
+      let bestMatch: string | null = null;
+      let bestMatchOffset = -Infinity;
 
-      // Find the first section that the scroll position has passed
-      for (const id of sortedSections) {
+      for (const id in sectionRefs.current) {
         const section = sectionRefs.current[id];
-        if (section && scrollPosition >= section.offsetTop) {
-          setActiveSection(id);
-          foundActive = true;
-          break;
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          // Check if the top of the section is within the viewport
+          if (rect.top >= 0 && rect.top < windowHeight / 2) {
+            if (rect.top > bestMatchOffset) {
+              bestMatchOffset = rect.top;
+              bestMatch = id;
+            }
+          } else if (rect.bottom > windowHeight / 2 && rect.bottom <= windowHeight) {
+            // If the bottom of the section is in the lower half of the viewport
+            if (windowHeight - rect.bottom > bestMatchOffset) {
+              bestMatchOffset = windowHeight - rect.bottom;
+              bestMatch = id;
+            }
+          } else if (rect.top <= 0 && rect.bottom >= windowHeight) {
+            // If the section fully covers the viewport, consider it active
+            bestMatch = id;
+            break; // No need to check further
+          }
         }
       }
 
-      // If we're at the very top of the page, set the first section as active
-      if (!foundActive && sortedSections.length > 0) {
-        setActiveSection(sortedSections[sortedSections.length - 1]);
+      if (bestMatch) {
+        setActiveSection(bestMatch);
+      } else if (Object.keys(sectionRefs.current).length > 0 && scrollY === 0) {
+        // If at the very top, set the first section as active
+        setActiveSection(Object.keys(sectionRefs.current)[0]);
       }
     };
 
@@ -61,8 +70,10 @@ const Index = () => {
   const scrollToSection = (sectionId: string) => {
     const section = sectionRefs.current[sectionId];
     if (section) {
+      const offset = section.offsetTop;
+      const headerOffset = 20; // Adjust this value based on your fixed header height if any
       window.scrollTo({
-        top: section.offsetTop - 20,
+        top: offset - headerOffset,
         behavior: 'smooth',
       });
       setActiveSection(sectionId); // Immediately set active section for better user feedback

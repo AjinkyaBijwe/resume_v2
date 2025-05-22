@@ -2,110 +2,207 @@
   "profile": {
     "name": "Ajinkya Bijwe",
     "title": "Assistant Vice President - Citi India",
-    "description": "Passionate and results-driven software developer with over 8 years of experience designing and implementing scalable applications. Specializing in frontend development with React and TypeScript, with strong knowledge of backend technologies as well. Committed to writing clean, maintainable code and creating exceptional user experiences.",
+    "description": "I'm a results-driven full-stack developer with over 9+ years of experience crafting cutting-edge applications and streamlining database systems. My expertise lies in rapidly prototyping solutions and modernising legacy frameworks to unlock enhanced performance and superior user experiences.",
     "avatar": "AB",
     "location": "Pune, India",
     "availability": "Full-time, Remote",
     "experience": "9+ Years",
-    "languages": "English, Marathi (Native), Hindi"
+    "languages": "English, Marathi (Native), Hindi",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/8812357?v=4",
+    "resumeUrl": "https://drive.google.com/file/d/1FhMaiifzt5_fM2IyxHQA4EAYkHrN0hp4/view?usp=sharing"
   },
   "experience": [
     {
-      "title": "Senior Frontend Developer",
-      "company": "TechCorp Inc.",
-      "period": "2021 - Present",
-      "description": "Lead developer for the company's main product, a SaaS platform used by over 50,000 users. Architected and implemented major frontend features using React, TypeScript and GraphQL. Improved site performance by 40% through code optimization and lazy loading strategies."
+      "designation": "Assistant Vice President",
+      "company": "Citi Inc.",
+      "link": "https://www.citi.com/",
+      "time": "2021 - Present",
+      "location": "Pune, IN",
+      "location_link": "https://www.google.com/maps/place/Pune,+Maharashtra/@18.5245649,73.7228812",
+      "description": [
+        "Currently involved in a large-scale project consisting of hundreds of modules, where I actively contribute and collaborate to ensure seamless functionality and timely delivery.",
+        "Successfully developed a custom UI library and components, utilizing advanced rendering techniques, to enhance the user interface and provide reusable and efficient solutions for component rendering. This initiative has significantly improved development speed and ensured consistency across the project.",
+        "Designed and created relational diagrams using d3.js, a powerful JavaScript library for data visualization, to present complex data in an intuitive and visually appealing manner.",
+        "Effectively utilized reactive components and the NGRX library to render sensitive data in a secure and controlled manner. By leveraging these technologies, I have ensured data privacy and implemented necessary measures to protect sensitive information."
+      ]
     },
     {
-      "title": "Frontend Developer",
-      "company": "WebSolutions Ltd.",
-      "period": "2018 - 2021",
-      "description": "Developed responsive web applications using React and Redux. Collaborated with UX designers to implement pixel-perfect interfaces. Participated in code reviews and mentored junior developers."
+      "designation": "Sr. Full Stack Developer",
+      "company": "Cognizant Technology Solutions",
+      "client": "Verizon Inc.",
+      "link": "https://www.cognizant.com/in/en",
+      "time": "2019 - 2021",
+      "location": "Tampa, US & Pune, IN",
+      "location_link": "https://www.google.com/maps/place/Tampa,+FL/@27.9944116,-82.5943635,11z",
+      "description": [
+        "Designed and developed the complete UI architecture for the Verizon Northstar application, encompassing various network components and modules.",
+        "Developed custom modules that dynamically generate network diagrams and establish connections based on API data, resulting in improved visualization and enhanced user experience.",
+        "Demonstrated expertise in implementing an efficient caching mechanism using the ngRX reactive library to store and retrieve dynamic data, enhancing application performance.",
+        "Designed and implemented a robust shopping cart model, enabling the creation and management of orders, as well as the ability to add/remove network components. Effectively tracked in-progress orders, ensuring smooth order management.",
+        "Successfully integrated WebSocket technology to capture real-time events and messages, facilitating the reloading and repopulation of network components. This implementation enhanced the application's responsiveness and provided a seamless user experience."
+      ]
     },
     {
-      "title": "Junior Web Developer",
-      "company": "Digital Agency",
-      "period": "2016 - 2018",
-      "description": "Built websites and web applications for various clients. Worked with HTML, CSS, JavaScript and jQuery. Gained experience working in an agile team environment."
+      "designation": "Full Stack Engineer",
+      "company": "Technumen Inc.",
+      "client": "Verizon Inc.",
+      "link": "https://www.verizon.com/",
+      "time": "2018 - 2019",
+      "location": "Tampa, US",
+      "location_link": "https://www.google.com/maps/place/Tampa,+FL/@27.9944116,-82.5943635,11z",
+      "description": [
+        "Upgraded and redesigned Verizon Fiber Inventory Management application, encompassing multiple modules, from Angular version 1 to 10, while migrating codebase from JavaScript to Typescript.",
+        "Received special recognition from both clients and employers for achieving a remarkable 40% enhancement in application reliability and loading speed, along with improved map rendering capabilities.",
+        "Spearheaded the development and migration of existing JavaScript and Java web applications, introducing new map layers, Angular directives, services, and controllers. Leveraged Google Maps API to dynamically showcase data within the map interface.",
+        "Demonstrated proficiency in creating responsive web pages, enhancing user-friendliness, and utilizing Adobe Illustrator and Moqups for wireframing. Collaborated with the team to gather feedback and incorporate design changes effectively."
+      ]
+    },
+    {
+      "designation": "Software Engineer",
+      "company": "Larsen and Toubro Infotech Ltd.",
+      "client": "Citi Inc.",
+      "link": "https://www.larsentoubro.com/",
+      "time": "2016 - 2018",
+      "location": "Charlotte, US",
+      "location_link": "https://www.google.com/maps/place/Charlotte,+NC/@35.2030728,-80.9799114,11z",
+      "description": [
+        "Developed recursive JavaScript modules, including Angular UI grid and Angular JSON Explorer for Citi Insight application enabling dynamic and recursive data display.",
+        "Integrated various external JavaScript and Angular libraries, such as Underscore, Chart, and Angular Bootstrap, to leverage dynamic data from APIs and enhance the project's UI rendering capabilities.",
+        "Utilized Object-Oriented JavaScript concepts extensively, incorporating object manipulation, inheritance, mix-ins, static inheritance, and additional utilities for improved handling of objects and arrays.",
+        "Played a key role in onboarding resources and facets (informational blocks) into the application's server-side database, ensuring seamless integration and efficient data management."
+      ]
     }
   ],
   "education": [
     {
-      "degree": "Master of Computer Science",
-      "school": "Stanford University",
-      "period": "2014 - 2016",
-      "description": "Specialized in Software Engineering and Human-Computer Interaction. Thesis on optimizing rendering performance in web applications."
+      "degree": "Master of Science",
+      "major": "Computer Science",
+      "university": "California State University, Fullerton",
+      "location": "Fullerton, US",
+      "duration": "2014-2016",
+      "gpa": 3.64,
+      "max_gpa": 4.0,
+      "description": "Completed a comprehensive curriculum in computer science, focusing on advanced topics such as algorithms, data structures, and software engineering principles. Engaged in hands-on projects and research to apply theoretical knowledge to real-world scenarios."
     },
     {
-      "degree": "Bachelor of Science in Computer Science",
-      "school": "University of California, Berkeley",
-      "period": "2010 - 2014",
-      "description": "Graduated with honors. Active member of the Computer Science Student Association."
+      "degree": "Bachelor of Engineering",
+      "major": "Computer Science",
+      "university": "Amravati University",
+      "location": "Amravati, IN",
+      "duration": "2009-2013",
+      "gpa": 3.8,
+      "max_gpa": 4.0,
+      "description": "Acquired a solid foundation in computer science principles, programming languages, and software development methodologies. Participated in various projects and internships to gain practical experience in the field."
     }
   ],
   "skills": {
     "technical": [
-      { "name": "React", "level": 95 },
-      { "name": "TypeScript", "level": 90 },
-      { "name": "HTML/CSS", "level": 90 },
-      { "name": "Node.js", "level": 75 },
-      { "name": "GraphQL", "level": 70 },
-      { "name": "Python", "level": 65 }
+      {
+        "name": "Programming Languages",
+        "description": ["JavaScript", "Typescript", "Python", "HTML5", "CSS/SCSS"]
+      },
+      {
+        "name": "Databases",
+        "description": ["MySQL", "PostgreSQL", "MongoDB", "Oracle"]
+      },
+      {
+        "name": "JS Libraries & Frameworks",
+        "description": [
+          "Angular",
+          "React",
+          "Vue",
+          "Node JS",
+          "NPM Packages",
+          "Ionic",
+          "Google Maps API",
+          "Open Street Maps",
+          "Mapbox JS API",
+          "NgRx",
+          "Jasmine",
+          "Karma",
+          "Chart JS",
+          "Bootstrap"
+        ]
+      },
+      {
+        "name": "Deployment Servers",
+        "description": ["Amazon AWS Cloud", "Google Cloud", "Jenkins", "Google Firebase", "Heroku", "Cloudinary"]
+      },
+      {
+        "name": "Version Control",
+        "description": ["GIT", "SVN", "Github", "Gitlab", "Bit Bucket"]
+      },
+      {
+        "name": "Prototyping Tools",
+        "description": ["Figma", "Invision", "Photoshop", "Illustrator"]
+      },
+      {
+        "name": "Planning Tools",
+        "description": ["Jira", "Confluence", "Trello"]
+      }
     ],
     "soft": ["Team Leadership", "Communication", "Problem Solving", "Project Management", "Agile Methodologies", "Mentoring"],
     "certifications": ["AWS Certified Solutions Architect", "Google Cloud Professional Developer", "Certified Scrum Master"]
   },
   "projects": [
     {
-      "name": "E-commerce Platform",
-      "description": "A full-stack e-commerce platform with product management, shopping cart, and payment processing.",
-      "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
-      "url": "https://github.com/johndoe/ecommerce-platform",
-      "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      "name": "EDGE 100",
+      "description": "Designed for high-performers, this powerful accountability tool will help you achieve more in 100 days than you used to in an entire year. Here's how: Track 7 Key Habits: Our app monitors the habits that matter most, giving you a clear daily score to measure your progress.",
+      "technologies": ["Angular", "Node.js", "MySQL", "Zapier", "Google Cloud", "Ionic"],
+      "url": "https://edge100app.com",
+      "image": "./src/assets/proj1.png"
     },
     {
-      "name": "Task Management App",
-      "description": "A collaborative task management application with real-time updates and team collaboration features.",
-      "technologies": ["React", "Firebase", "Tailwind CSS"],
-      "url": "https://github.com/johndoe/task-manager",
-      "image": "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      "name": "Bottlematch",
+      "description": "Explore wine, find perfect pairings, and connect with a community. Choose a recipe, and let BottleMatch find your perfect wine pairing. Connect with wine and food enthusiasts in our vibrant community.",
+      "technologies": ["Angular", "Node.js", "MySQL", "Google Cloud", "Ionic"],
+      "url": "https://bottlematch.com",
+      "image": "./src/assets/proj2.webp"
     },
     {
-      "name": "Weather Dashboard",
-      "description": "A weather dashboard that provides real-time weather information and forecasts for any location.",
-      "technologies": ["JavaScript", "OpenWeather API", "Chart.js"],
-      "url": "https://github.com/johndoe/weather-app",
-      "image": "https://images.unsplash.com/photo-1561484930-998b6a7b22e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      "name": "The Green Mission",
+      "description": "Harnessing financial and tax resources for greener, smarter practices.",
+      "technologies": ["Angular", "Node.js", "MySQL", "Google Cloud", "Ionic", "Dropbox API"],
+      "url": "https://www.thegreenmissioninc.com",
+      "image": "./src/assets/proj3.png"
+    },
+    {
+      "name": "360 Response",
+      "description": "Rapid Response is the most intuitive software for firefighting-response on the market. This iOS-based platform is the first software designed by firefighters for firefighters.",
+      "technologies": ["Angular", "Node.js", "MySQL", "Google Cloud", "Ionic", "Google Maps API"],
+      "url": "https://www.rapidresponseco.com",
+      "image": "./src/assets/proj4.png"
     }
   ],
   "awards": [
     {
       "title": "Innovation Award",
-      "organization": "Tech Innovations Inc.",
-      "date": "2023",
-      "description": "Received for developing an AI-powered feature that increased user engagement by 35%."
+      "organization": "Rapid Response Inc.",
+      "date": "2021",
+      "description": "Rapid Response System: Collaborated on a lifesaving app to assist NY firefighters with real-time hydrant and fire location mapping."
     },
     {
-      "title": "Best Mobile App",
-      "organization": "Mobile App Awards",
-      "date": "2020",
-      "description": "Won for creating a health tracking app that was downloaded by over 500,000 users."
+      "title": "Chrome Extensions",
+      "organization": "Google Inc.",
+      "date": "2018",
+      "description": " Published Chrome themes/extensions with over 10,000 downloads, reflecting design and user engagement expertise."
     },
     {
-      "title": "Hackathon Winner",
-      "organization": "SF Code Challenge",
-      "date": "2019",
-      "description": "First place in a 48-hour hackathon for building a sustainable energy tracking application."
+      "title": "GitHub Contributions",
+      "organization": "GitHub Inc.",
+      "date": "2025",
+      "description": "Earned badges for significant contributions to open-source projects, emphasizing collaboration and innovation."
     }
   ],
   "contact": {
-    "email": "john.doe@example.com",
+    "email": "ajinkya.bijwe@gmail.com",
     "phone": "+1 (123) 456-7890",
     "website": "johndoe.dev",
     "social": {
-      "linkedin": "linkedin.com/in/johndoe",
-      "github": "github.com/johndoe",
-      "twitter": "twitter.com/johndoe"
+      "linkedin": "https://linkedin.com/in/ajinkyabijwe",
+      "github": "https://github.com/ajinkyabijwe",
+      "twitter": "https://x.com/ajinkyabijwe",
+      "dribbble": "https://dribbble.com/aju16"
     }
   }
 }

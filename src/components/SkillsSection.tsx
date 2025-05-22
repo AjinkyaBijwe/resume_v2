@@ -14,12 +14,19 @@ const SkillsSection = () => {
             <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50">Technical Skills</h3>
           </CardHeader>
           <CardContent className="p-6">
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-6">
               {skills.technical.map((skill, index) => (
-                <div
-                  key={index}
-                  className="bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-medium shadow-sm">
-                  {skill.name}
+                <div key={index} className="flex flex-col gap-4">
+                  <div className="text-gray-700 dark:text-gray-300 text-md font-medium">{skill.name}</div>
+                  <div className="flex flex-wrap gap-2">
+                    {skill.description.map((desc, i) => (
+                      <div
+                        key={i}
+                        className="bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-medium shadow-sm">
+                        {desc}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
